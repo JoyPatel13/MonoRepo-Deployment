@@ -24,7 +24,4 @@ jobs:
           push: true
           tags: joypatel13/todo-app-backend:${{github.sha}}
         
-
-
-
 ##SSH into our VM and start the new image
