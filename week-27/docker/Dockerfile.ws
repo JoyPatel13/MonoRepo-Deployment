@@ -13,6 +13,6 @@ COPY ./apps/ws ./apps.ws
 RUN bun install
 RUN bun db:generate
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD [ "bun", "run" ,"start:websocket" ]
