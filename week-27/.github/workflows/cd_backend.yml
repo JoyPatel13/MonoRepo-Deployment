@@ -1,7 +1,7 @@
 name: Deploy the backend
 on:
   push:
-    branches :[main]
+    branches: [main]
 
 jobs:
   build:
@@ -22,7 +22,9 @@ jobs:
           context: .
           file: ./docker/Dockerfile.backend
           push: true
-          tags: JoyPatel13/todo-app-backend:${{github.sha }}
+          tags: JoyPatel13/todo-app-backend:${{github.sha}}
         
+
+
 
 ##SSH into our VM and start the new image
