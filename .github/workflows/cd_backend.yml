@@ -22,6 +22,6 @@ jobs:
           context: ./week-27
           file: ./week-27/docker/Dockerfile.backend
           push: true
-          tags: joypatel13/todo-app-backend:${{github.sha}}
+          tags: joyy13/todo-app-backend:${{github.sha}}
         
 ##SSH into our VM and start the new image
