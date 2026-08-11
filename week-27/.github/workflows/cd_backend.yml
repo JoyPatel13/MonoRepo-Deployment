@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        uses: actions/Checkout@v2
+        uses: actions/checkout@v2
 
       - name: Docker login
         uses: docker/login-action@v2
@@ -22,7 +22,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile.backend
           push: true
-          tags: JoyPatel13/todo-app-backend:${{github.sha}}
+          tags: joypatel13/todo-app-backend:${{github.sha}}
         
 
 
